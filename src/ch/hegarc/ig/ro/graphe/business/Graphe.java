@@ -220,10 +220,12 @@ public class Graphe {
     
     public void dijkstra(Noeud noeudDepart){
         
-	for(Noeud n : noeuds.values()){
+	/*for(Noeud n : noeuds.values()){
             n.setDijkstraPoids(Integer.MAX_VALUE);
             n.setDijkstraPred(null);
-	}
+	}*/
+        
+        this.reInitNoeud();
 	
 	List<Noeud> vpcc = new ArrayList<>();
 	List<Noeud> memoire = new ArrayList<>();
@@ -296,6 +298,20 @@ public class Graphe {
         }
         return noeudCourant;
         /*Collections.sort(memoire,new DijkstraNodeComparator());*/
+    }
+    
+    public void calculDegres(){
+        this.reInitNoeud();
+        
+        for (Map.Entry<String, Noeud> noeud : this.noeuds.entrySet()) {
+            noeud.getValue().setDegreSortant(noeud.getValue().getArcsSort().size());
+            for (Arc arc : noeud.getArcsSort()) {
+                Noeud dest = arc.getDest();
+                dest.setDegreEntrant(dest.getDegreEntrant()+1);
+                arc.setSource(noeud.getValue());
+                dest.ajouterArcEntrant(arc);
+            }
+        }
     }
    
     public static Graphe copy(Graphe g) throws IOException, ClassNotFoundException{
