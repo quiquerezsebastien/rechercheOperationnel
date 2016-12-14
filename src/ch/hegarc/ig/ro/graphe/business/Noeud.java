@@ -31,6 +31,7 @@ public class Noeud implements Cloneable {
     private List<Noeud> vpcc;
     private int degreEntrant;
     private int degreSortant;
+    private int ordoTot;
 
     public Noeud() {
     }
@@ -165,6 +166,14 @@ public class Noeud implements Cloneable {
 
     public void setDegreSortant(int degreSortant) {
         this.degreSortant = degreSortant;
+    }
+
+    public int getOrdoTot() {
+        return ordoTot;
+    }
+
+    public void setOrdoTot(int ordoTot) {
+        this.ordoTot = ordoTot;
     }
     
     @Override

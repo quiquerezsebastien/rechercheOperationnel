@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/sebastie.quiquere/Documents/NetBeansProjects/recherche_operationnelle/Graphe/src/ch/hegarc/ig/ro/graphe/business/Arc.java</file>
-            <file>file:/C:/Users/sebastie.quiquere/Documents/NetBeansProjects/recherche_operationnelle/Graphe/src/ch/hegarc/ig/ro/graphe/business/DijkstraNodeComparator.java</file>
-            <file>file:/C:/Users/sebastie.quiquere/Documents/NetBeansProjects/recherche_operationnelle/Graphe/src/ch/hegarc/ig/ro/graphe/business/Graphe.java</file>
-            <file>file:/C:/Users/sebastie.quiquere/Documents/NetBeansProjects/recherche_operationnelle/Graphe/src/ch/hegarc/ig/ro/graphe/Application/Application.java</file>
-            <file>file:/C:/Users/sebastie.quiquere/Documents/NetBeansProjects/recherche_operationnelle/Graphe/src/ch/hegarc/ig/ro/graphe/business/Metrique.java</file>
-            <file>file:/C:/Users/sebastie.quiquere/Documents/NetBeansProjects/recherche_operationnelle/Graphe/src/ch/hegarc/ig/ro/graphe/business/Noeud.java</file>
+            <file>file:/C:/Users/johan.steiner/Documents/GitHub/rechercheOperationnel/src/ch/hegarc/ig/ro/graphe/business/Noeud.java</file>
+            <file>file:/C:/Users/johan.steiner/Documents/GitHub/rechercheOperationnel/src/ch/hegarc/ig/ro/graphe/business/Graphe.java</file>
+            <file>file:/C:/Users/johan.steiner/Documents/GitHub/rechercheOperationnel/src/ch/hegarc/ig/ro/graphe/business/Arc.java</file>
         </group>
     </open-files>
 </project-private>

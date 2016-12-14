@@ -311,4 +311,29 @@ public class Graphe {
         return clone;
     }
     
+    public List<Noeud> triTopologique() {
+        List<Noeud> triTopo = new ArrayList<Noeud>();
+        
+        return triTopo;
+    }
+    
+    public void ordonnancementAuPlusTot() {
+        for(Noeud noeud : listNoeuds) {
+            noeud.setOrdoTot(0);
+        }
+        List<Noeud> mem = new ArrayList<Noeud>();
+        mem = triTopologique();
+        
+        for(Noeud noeudMem : mem) {        
+            for(Arc arc : noeudMem.getArcsSort()) {
+                Noeud ndest = arc.getDest();
+                int ordoCourant = noeudMem.getOrdoTot() + arc.getPoids();
+                if(ordoCourant > ndest.getOrdoTot()) {
+                    ndest.setOrdoTot(ordoCourant);
+                }
+            }
+            
+        }
+    }
+    
 }
